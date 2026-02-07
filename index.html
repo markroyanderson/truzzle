@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisics - Grid Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fisics</h1>
+            <p class="tagline">Grid Logic Puzzles</p>
+        </header>
+
+        <div class="game-info">
+            <div class="level-display">
+                Level <span id="current-level">1</span> / <span id="total-levels">20</span>
+            </div>
+            <button id="reset-btn" class="btn">Reset Level</button>
+            <button id="hint-btn" class="btn">Hint</button>
+        </div>
+
+        <div class="game-container">
+            <div id="grid-container" class="grid-container"></div>
+            
+            <div class="pieces-container">
+                <h3>Available Pieces</h3>
+                <div id="pieces-list" class="pieces-list"></div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-level" class="btn btn-nav">← Previous</button>
+            <button id="next-level" class="btn btn-nav">Next →</button>
+        </div>
+
+        <div id="victory-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Level Complete! 🎉</h2>
+                <p>Great job solving this puzzle!</p>
+                <button id="continue-btn" class="btn btn-primary">Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
